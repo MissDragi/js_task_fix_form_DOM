@@ -8,7 +8,7 @@ forms.forEach((form) => {
     if (
       !element.name ||
       element.type ===
-        [!'INPUT', 'TEXTAREA', 'SELECT'].includes(element.tagName)
+        !['INPUT', 'TEXTAREA', 'SELECT'].includes(element.tagName)
     ) {
       continue;
     }
